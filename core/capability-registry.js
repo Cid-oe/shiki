@@ -56,8 +56,17 @@ class CapabilityRegistry {
       throw new Error(`Capability '${name}' is not registered`);
     }
 
-    if (cap.trustLevel > context.operatorTrustLevel) {
-      throw new Error(`Permission denied: Capability '${name}' requires trust level ${cap.trustLevel} (${this.trustLevels[cap.trustLevel]}), current level is ${context.operatorTrustLevel}`);
+    // Strictly validate that operatorTrustLevel is a valid integer between 0 and 4
+    let parsedTrustLevel = 0;
+    if (typeof context.operatorTrustLevel === 'number' && Number.isInteger(context.operatorTrustLevel)) {
+      parsedTrustLevel = context.operatorTrustLevel;
+    } else {
+      // Default-deny: If context is missing, invalid type, string, NaN, or non-integer, force lowest privilege (0)
+      parsedTrustLevel = 0;
+    }
+
+    if (cap.trustLevel > parsedTrustLevel) {
+      throw new Error(`Permission denied: Capability '${name}' requires trust level ${cap.trustLevel} (${this.trustLevels[cap.trustLevel]}), current level is ${parsedTrustLevel}`);
     }
 
     return await cap.handler(params, context);

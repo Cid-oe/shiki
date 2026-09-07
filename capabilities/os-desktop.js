@@ -1,7 +1,8 @@
 /**
  * Desktop & Window Management Capability
  * Interacts with Wayland/X11 compositors safely without shell interpolation.
- * Uses execFile with argv arrays to prevent command injection.
+ * Always returns an array of windows for backward compatibility while providing
+ * availability metadata properties on the returned array instance.
  */
 
 const { execFile } = require('child_process');
@@ -29,7 +30,7 @@ function execFilePromise(file, args = [], options = {}) {
 }
 
 function registerDesktopCapabilities(registry) {
-  // 1. List active GUI windows
+  // 1. List active GUI windows (Returns Array with attached availability metadata)
   registry.register({
     name: "desktop_list_windows",
     version: "1.0.0",
@@ -38,11 +39,13 @@ function registerDesktopCapabilities(registry) {
     description: "Lists all running GUI application windows across monitors and virtual workspaces.",
     schema: { type: "object", properties: {} },
     handler: async () => {
+      const windows = [];
+
       const hyprRes = await execFilePromise("hyprctl", ["clients", "-j"]);
       if (hyprRes.success && hyprRes.stdout) {
         try {
           const clients = JSON.parse(hyprRes.stdout);
-          return clients.map(c => ({
+          const mapped = clients.map(c => ({
             id: c.address,
             pid: c.pid,
             class: c.class,
@@ -51,22 +54,25 @@ function registerDesktopCapabilities(registry) {
             monitor: c.monitor,
             focused: c.focusHistoryID === 0
           }));
+          mapped.available = true;
+          return mapped;
         } catch (e) {}
       }
 
       const wmRes = await execFilePromise("wmctrl", ["-l", "-p"]);
       if (wmRes.success && wmRes.stdout) {
-        return wmRes.stdout.split('\n').filter(Boolean).map(line => {
+        const mapped = wmRes.stdout.split('\n').filter(Boolean).map(line => {
           const parts = line.split(/\s+/);
           return { id: parts[0], workspace: parts[1], pid: parts[2], title: parts.slice(4).join(' ') };
         });
+        mapped.available = true;
+        return mapped;
       }
 
-      return {
-        available: false,
-        error: "Neither hyprctl nor wmctrl compositor discovery utilities are installed on this host",
-        windows: []
-      };
+      // If neither is installed, return an array (for contract compatibility) with available: false
+      windows.available = false;
+      windows.error = "Neither hyprctl nor wmctrl compositor discovery utilities are installed on this host";
+      return windows;
     }
   });
 
@@ -91,7 +97,7 @@ function registerDesktopCapabilities(registry) {
     }
   });
 
-  // 3. Clipboard Management (Safe piped execution)
+  // 3. Clipboard Management
   registry.register({
     name: "desktop_get_clipboard",
     version: "1.0.0",
@@ -138,7 +144,7 @@ function registerDesktopCapabilities(registry) {
     }
   });
 
-  // 4. Desktop Notifications (Immune to command injection: uses execFile argv)
+  // 4. Desktop Notifications
   registry.register({
     name: "desktop_notify",
     version: "1.0.0",

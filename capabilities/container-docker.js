@@ -74,10 +74,10 @@ function registerDockerCapabilities(registry) {
       }
     },
     handler: async ({ containerId, command }) => {
-      // Validate containerId format strictly to prevent flag injection
+      // Validate containerId strictly: must start with alphanumeric character to prevent CLI flag injection (e.g. '--help', '-d')
       const sanitizedId = String(containerId).trim();
-      if (!/^[a-zA-Z0-9_\-\.]+$/.test(sanitizedId)) {
-        throw new Error(`Invalid containerId format: '${containerId}'`);
+      if (!/^[a-zA-Z0-9][a-zA-Z0-9_\-\.]*$/.test(sanitizedId)) {
+        throw new Error(`Invalid containerId format: '${containerId}'. Must start with an alphanumeric character.`);
       }
 
       const args = ["exec", sanitizedId, "sh", "-c", String(command)];
