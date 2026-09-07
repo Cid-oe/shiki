@@ -4,6 +4,7 @@
  */
 
 const { spawn } = require('child_process');
+const path = require('path');
 const assert = require('assert');
 const { CapabilityRegistry } = require('../core/capability-registry');
 const { registerDesktopCapabilities } = require('../capabilities/os-desktop');
@@ -56,22 +57,40 @@ async function runTests() {
 
   // 3. Master MCP Server Handshake
   console.log("\n[3/3] Testing Master MCP Server JSON-RPC stdio pipeline...");
-  const mcp = spawn('node', ['/home/cid/universal-execution-platform/mcp-server/index.js']);
+  const mcpServerPath = path.join(__dirname, '../mcp-server/index.js');
+  const mcp = spawn('node', [mcpServerPath]);
   let buffer = '';
-  mcp.stdout.on('data', chunk => buffer += chunk.toString());
+  let mcpStderr = '';
 
-  const listRes = await new Promise((resolve) => {
+  mcp.stdout.on('data', chunk => buffer += chunk.toString());
+  mcp.stderr.on('data', chunk => mcpStderr += chunk.toString());
+
+  const listRes = await new Promise((resolve, reject) => {
+    const timeout = setTimeout(() => {
+      reject(new Error(`MCP server handshake timed out after 15s. Stderr: ${mcpStderr}`));
+    }, 15000);
+
+    mcp.on('exit', (code) => {
+      clearTimeout(timeout);
+      reject(new Error(`MCP server exited prematurely with code ${code}. Stderr: ${mcpStderr}`));
+    });
+
     const check = () => {
       const lines = buffer.split('\n');
       for (const line of lines) {
         if (!line.trim()) continue;
         try {
           const parsed = JSON.parse(line);
-          if (parsed.id === 101) { resolve(parsed); return; }
+          if (parsed.id === 101) {
+            clearTimeout(timeout);
+            resolve(parsed);
+            return;
+          }
         } catch (e) {}
       }
       setTimeout(check, 50);
     };
+
     mcp.stdin.write(JSON.stringify({ jsonrpc: "2.0", id: 101, method: "tools/list", params: {} }) + '\n');
     check();
   });

@@ -4,12 +4,14 @@
  */
 
 const { spawn } = require('child_process');
+const path = require('path');
 const assert = require('assert');
 
 async function testMCP() {
   console.log("Testing MCP Server JSON-RPC Protocol over stdio...");
 
-  const mcp = spawn('node', ['/home/cid/browser-controller/packages/mcp-server/index.js']);
+  const mcpServerPath = path.join(__dirname, '../packages/mcp-server/index.js');
+  const mcp = spawn('node', [mcpServerPath]);
   let buffer = '';
 
   mcp.stdout.on('data', chunk => buffer += chunk.toString());

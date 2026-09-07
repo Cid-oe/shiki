@@ -3,7 +3,8 @@
  * Bridges the tested BrowserService into the Universal Digital Execution Platform registry.
  */
 
-const { BrowserService } = require('/home/cid/shiki/packages/browser-controller/packages/core/browser-service');
+const path = require('path');
+const { BrowserService } = require(path.join(__dirname, '../packages/browser-controller/packages/core/browser-service'));
 
 function registerBrowserCapabilities(registry, port = 9222) {
   const browser = new BrowserService(port);

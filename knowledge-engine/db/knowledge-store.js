@@ -5,8 +5,9 @@
 
 const fs = require('fs');
 const path = require('path');
+const os = require('os');
 
-const DB_DIR = '/home/cid/.config/agent-knowledge-engine';
+const DB_DIR = path.join(os.homedir(), '.config', 'agent-knowledge-engine');
 const KNOWLEDGE_FILE = path.join(DB_DIR, 'knowledge-graph.json');
 
 class KnowledgeStore {

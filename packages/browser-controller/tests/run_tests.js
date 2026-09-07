@@ -25,7 +25,7 @@ async function runTests() {
       `--remote-debugging-port=${TEST_PORT}`,
       '--disable-gpu',
       '--no-first-run',
-      '--user-data-dir=/home/cid/.config/Brave-Controller-Test',
+      '--user-data-dir=/tmp/brave-ctrl-test-i0zL55',
       'about:blank'
     ], { stdio: 'ignore' });
 

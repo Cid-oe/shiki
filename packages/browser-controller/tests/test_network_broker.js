@@ -12,7 +12,7 @@ async function testNetwork() {
     `--remote-debugging-port=${TEST_PORT}`,
     '--disable-gpu',
     '--no-first-run',
-    '--user-data-dir=/home/cid/.config/Brave-Net-Test2',
+    '--user-data-dir=/tmp/brave-net-test-3bSMQJ',
     'about:blank'
   ], { stdio: 'ignore' });
 

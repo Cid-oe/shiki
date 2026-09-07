@@ -60,7 +60,7 @@ export interface FileTransferService {
       "required": ["tabId"],
       "properties": {
         "tabId": { "type": "integer" },
-        "destinationDir": { "type": "string", "default": "/home/cid/Downloads" },
+        "destinationDir": { "type": "string", "default": "~/Downloads" },
         "timeoutMs": { "type": "integer", "default": 30000 }
       }
     }
