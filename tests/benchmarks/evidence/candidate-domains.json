@@ -1,0 +1,290 @@
+[
+  {
+    "id": 1,
+    "candidateName": "cid-oe",
+    "completeDomain": "cid-oe.nic.us.kg",
+    "generationSource": "usernameContext",
+    "timestamp": "2026-09-07T16:54:41.790Z",
+    "availabilityStatus": "pending_check"
+  },
+  {
+    "id": 2,
+    "candidateName": "cid-oe-app",
+    "completeDomain": "cid-oe-app.nic.us.kg",
+    "generationSource": "usernameContext",
+    "timestamp": "2026-09-07T16:54:41.790Z",
+    "availabilityStatus": "pending_check"
+  },
+  {
+    "id": 3,
+    "candidateName": "cid-oe-hub",
+    "completeDomain": "cid-oe-hub.nic.us.kg",
+    "generationSource": "usernameContext",
+    "timestamp": "2026-09-07T16:54:41.790Z",
+    "availabilityStatus": "pending_check"
+  },
+  {
+    "id": 4,
+    "candidateName": "cid-oe-lab",
+    "completeDomain": "cid-oe-lab.nic.us.kg",
+    "generationSource": "usernameContext",
+    "timestamp": "2026-09-07T16:54:41.790Z",
+    "availabilityStatus": "pending_check"
+  },
+  {
+    "id": 5,
+    "candidateName": "cid-oe-dev",
+    "completeDomain": "cid-oe-dev.nic.us.kg",
+    "generationSource": "usernameContext",
+    "timestamp": "2026-09-07T16:54:41.790Z",
+    "availabilityStatus": "pending_check"
+  },
+  {
+    "id": 6,
+    "candidateName": "cid-oe-hq",
+    "completeDomain": "cid-oe-hq.nic.us.kg",
+    "generationSource": "usernameContext",
+    "timestamp": "2026-09-07T16:54:41.790Z",
+    "availabilityStatus": "pending_check"
+  },
+  {
+    "id": 7,
+    "candidateName": "get-cid-oe",
+    "completeDomain": "get-cid-oe.nic.us.kg",
+    "generationSource": "usernameContext",
+    "timestamp": "2026-09-07T16:54:41.790Z",
+    "availabilityStatus": "pending_check"
+  },
+  {
+    "id": 8,
+    "candidateName": "the-cid-oe",
+    "completeDomain": "the-cid-oe.nic.us.kg",
+    "generationSource": "usernameContext",
+    "timestamp": "2026-09-07T16:54:41.790Z",
+    "availabilityStatus": "pending_check"
+  },
+  {
+    "id": 9,
+    "candidateName": "ai-cid-oe",
+    "completeDomain": "ai-cid-oe.nic.us.kg",
+    "generationSource": "usernameContext",
+    "timestamp": "2026-09-07T16:54:41.790Z",
+    "availabilityStatus": "pending_check"
+  },
+  {
+    "id": 10,
+    "candidateName": "shiki",
+    "completeDomain": "shiki.nic.us.kg",
+    "generationSource": "projectContext",
+    "timestamp": "2026-09-07T16:54:41.790Z",
+    "availabilityStatus": "pending_check"
+  },
+  {
+    "id": 11,
+    "candidateName": "shiki-app",
+    "completeDomain": "shiki-app.nic.us.kg",
+    "generationSource": "projectContext",
+    "timestamp": "2026-09-07T16:54:41.790Z",
+    "availabilityStatus": "pending_check"
+  },
+  {
+    "id": 12,
+    "candidateName": "shiki-hub",
+    "completeDomain": "shiki-hub.nic.us.kg",
+    "generationSource": "projectContext",
+    "timestamp": "2026-09-07T16:54:41.790Z",
+    "availabilityStatus": "pending_check"
+  },
+  {
+    "id": 13,
+    "candidateName": "shiki-lab",
+    "completeDomain": "shiki-lab.nic.us.kg",
+    "generationSource": "projectContext",
+    "timestamp": "2026-09-07T16:54:41.790Z",
+    "availabilityStatus": "pending_check"
+  },
+  {
+    "id": 14,
+    "candidateName": "shiki-dev",
+    "completeDomain": "shiki-dev.nic.us.kg",
+    "generationSource": "projectContext",
+    "timestamp": "2026-09-07T16:54:41.790Z",
+    "availabilityStatus": "pending_check"
+  },
+  {
+    "id": 15,
+    "candidateName": "shiki-hq",
+    "completeDomain": "shiki-hq.nic.us.kg",
+    "generationSource": "projectContext",
+    "timestamp": "2026-09-07T16:54:41.790Z",
+    "availabilityStatus": "pending_check"
+  },
+  {
+    "id": 16,
+    "candidateName": "get-shiki",
+    "completeDomain": "get-shiki.nic.us.kg",
+    "generationSource": "projectContext",
+    "timestamp": "2026-09-07T16:54:41.790Z",
+    "availabilityStatus": "pending_check"
+  },
+  {
+    "id": 17,
+    "candidateName": "the-shiki",
+    "completeDomain": "the-shiki.nic.us.kg",
+    "generationSource": "projectContext",
+    "timestamp": "2026-09-07T16:54:41.790Z",
+    "availabilityStatus": "pending_check"
+  },
+  {
+    "id": 18,
+    "candidateName": "ai-shiki",
+    "completeDomain": "ai-shiki.nic.us.kg",
+    "generationSource": "projectContext",
+    "timestamp": "2026-09-07T16:54:41.790Z",
+    "availabilityStatus": "pending_check"
+  },
+  {
+    "id": 19,
+    "candidateName": "siddharth",
+    "completeDomain": "siddharth.nic.us.kg",
+    "generationSource": "fullNameContext",
+    "timestamp": "2026-09-07T16:54:41.790Z",
+    "availabilityStatus": "pending_check"
+  },
+  {
+    "id": 20,
+    "candidateName": "siddharth-app",
+    "completeDomain": "siddharth-app.nic.us.kg",
+    "generationSource": "fullNameContext",
+    "timestamp": "2026-09-07T16:54:41.790Z",
+    "availabilityStatus": "pending_check"
+  },
+  {
+    "id": 21,
+    "candidateName": "siddharth-hub",
+    "completeDomain": "siddharth-hub.nic.us.kg",
+    "generationSource": "fullNameContext",
+    "timestamp": "2026-09-07T16:54:41.790Z",
+    "availabilityStatus": "pending_check"
+  },
+  {
+    "id": 22,
+    "candidateName": "siddharth-lab",
+    "completeDomain": "siddharth-lab.nic.us.kg",
+    "generationSource": "fullNameContext",
+    "timestamp": "2026-09-07T16:54:41.790Z",
+    "availabilityStatus": "pending_check"
+  },
+  {
+    "id": 23,
+    "candidateName": "siddharth-dev",
+    "completeDomain": "siddharth-dev.nic.us.kg",
+    "generationSource": "fullNameContext",
+    "timestamp": "2026-09-07T16:54:41.790Z",
+    "availabilityStatus": "pending_check"
+  },
+  {
+    "id": 24,
+    "candidateName": "siddharth-hq",
+    "completeDomain": "siddharth-hq.nic.us.kg",
+    "generationSource": "fullNameContext",
+    "timestamp": "2026-09-07T16:54:41.790Z",
+    "availabilityStatus": "pending_check"
+  },
+  {
+    "id": 25,
+    "candidateName": "get-siddharth",
+    "completeDomain": "get-siddharth.nic.us.kg",
+    "generationSource": "fullNameContext",
+    "timestamp": "2026-09-07T16:54:41.790Z",
+    "availabilityStatus": "pending_check"
+  },
+  {
+    "id": 26,
+    "candidateName": "the-siddharth",
+    "completeDomain": "the-siddharth.nic.us.kg",
+    "generationSource": "fullNameContext",
+    "timestamp": "2026-09-07T16:54:41.790Z",
+    "availabilityStatus": "pending_check"
+  },
+  {
+    "id": 27,
+    "candidateName": "ai-siddharth",
+    "completeDomain": "ai-siddharth.nic.us.kg",
+    "generationSource": "fullNameContext",
+    "timestamp": "2026-09-07T16:54:41.790Z",
+    "availabilityStatus": "pending_check"
+  },
+  {
+    "id": 28,
+    "candidateName": "siddharth-u",
+    "completeDomain": "siddharth-u.nic.us.kg",
+    "generationSource": "fullNameContext",
+    "timestamp": "2026-09-07T16:54:41.790Z",
+    "availabilityStatus": "pending_check"
+  },
+  {
+    "id": 29,
+    "candidateName": "siddharth-u-app",
+    "completeDomain": "siddharth-u-app.nic.us.kg",
+    "generationSource": "fullNameContext",
+    "timestamp": "2026-09-07T16:54:41.790Z",
+    "availabilityStatus": "pending_check"
+  },
+  {
+    "id": 30,
+    "candidateName": "siddharth-u-hub",
+    "completeDomain": "siddharth-u-hub.nic.us.kg",
+    "generationSource": "fullNameContext",
+    "timestamp": "2026-09-07T16:54:41.790Z",
+    "availabilityStatus": "pending_check"
+  },
+  {
+    "id": 31,
+    "candidateName": "siddharth-u-lab",
+    "completeDomain": "siddharth-u-lab.nic.us.kg",
+    "generationSource": "fullNameContext",
+    "timestamp": "2026-09-07T16:54:41.790Z",
+    "availabilityStatus": "pending_check"
+  },
+  {
+    "id": 32,
+    "candidateName": "siddharth-u-dev",
+    "completeDomain": "siddharth-u-dev.nic.us.kg",
+    "generationSource": "fullNameContext",
+    "timestamp": "2026-09-07T16:54:41.790Z",
+    "availabilityStatus": "pending_check"
+  },
+  {
+    "id": 33,
+    "candidateName": "siddharth-u-hq",
+    "completeDomain": "siddharth-u-hq.nic.us.kg",
+    "generationSource": "fullNameContext",
+    "timestamp": "2026-09-07T16:54:41.790Z",
+    "availabilityStatus": "pending_check"
+  },
+  {
+    "id": 34,
+    "candidateName": "get-siddharth-u",
+    "completeDomain": "get-siddharth-u.nic.us.kg",
+    "generationSource": "fullNameContext",
+    "timestamp": "2026-09-07T16:54:41.790Z",
+    "availabilityStatus": "pending_check"
+  },
+  {
+    "id": 35,
+    "candidateName": "the-siddharth-u",
+    "completeDomain": "the-siddharth-u.nic.us.kg",
+    "generationSource": "fullNameContext",
+    "timestamp": "2026-09-07T16:54:41.790Z",
+    "availabilityStatus": "pending_check"
+  },
+  {
+    "id": 36,
+    "candidateName": "ai-siddharth-u",
+    "completeDomain": "ai-siddharth-u.nic.us.kg",
+    "generationSource": "fullNameContext",
+    "timestamp": "2026-09-07T16:54:41.790Z",
+    "availabilityStatus": "pending_check"
+  }
+]

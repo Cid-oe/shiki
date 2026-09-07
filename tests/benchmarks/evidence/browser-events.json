@@ -1,0 +1,639 @@
+[
+  {
+    "timestamp": "2026-09-07T16:54:41.789Z",
+    "type": "benchmark.started",
+    "payload": {
+      "port": 9225,
+      "target": "https://dashboard.digitalplat.org/auth/register"
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:41.790Z",
+    "type": "browser.goal.candidate_generated",
+    "payload": {
+      "count": 36
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:42.113Z",
+    "type": "browser.attached",
+    "payload": {
+      "port": 9225
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:42.115Z",
+    "type": "browser.navigation",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/auth/register"
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:42.118Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/auth/register",
+      "status": null
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:42.960Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/auth/register",
+      "status": 200
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:42.965Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/cdn-cgi/speculation",
+      "status": null
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:42.965Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/media/98e207f02528a563-s.p.woff2",
+      "status": null
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:42.965Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/media/d3ebbfd689654d3a-s.p.woff2",
+      "status": null
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:42.965Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/media/f3f7e95f2dbc4fe4-s.p.woff2",
+      "status": null
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:42.966Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/css/a0e8d8d14cc7c691.css",
+      "status": null
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:42.966Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/css/d07e075f55082034.css",
+      "status": null
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:42.966Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/webpack-a7c528c82b0ead10.js",
+      "status": null
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:42.966Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js",
+      "status": null
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:42.966Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495",
+      "status": null
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:42.994Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/cdn-cgi/speculation",
+      "status": 200
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:42.994Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js",
+      "status": 200
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:42.996Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/css/d07e075f55082034.css",
+      "status": 200
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:42.998Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/css/a0e8d8d14cc7c691.css",
+      "status": 200
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:42.999Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/media/98e207f02528a563-s.p.woff2",
+      "status": 200
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:42.999Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/media/d3ebbfd689654d3a-s.p.woff2",
+      "status": 200
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.000Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/media/f3f7e95f2dbc4fe4-s.p.woff2",
+      "status": 200
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.004Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/app/auth/register/page-8405771d6aee5e28.js",
+      "status": null
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.004Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/4602-5813b250b1de3043.js",
+      "status": null
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.004Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/app/not-found-dffda8f7cf56ad14.js",
+      "status": null
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.004Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/app/layout-3ffdee293c6a0cd3.js",
+      "status": null
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.004Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/8140-a83692458fd6d2a6.js",
+      "status": null
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.004Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/3742-e61af0a7cfa4ceb2.js",
+      "status": null
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.005Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/2018-2ed31848330973c5.js",
+      "status": null
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.005Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/1147-8c9959d4bb63e9cf.js",
+      "status": null
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.005Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/9840-aca0236622f0dbd9.js",
+      "status": null
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.005Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/9523-7323485d6a1327b5.js",
+      "status": null
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.005Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/3176-8f8605731c6de6a0.js",
+      "status": null
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.005Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/2426-6d1d34079c2fa7b1.js",
+      "status": null
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.005Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/8930-1b7818ea4c8cbb73.js",
+      "status": null
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.005Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/9528-6b07c085fb0a6180.js",
+      "status": null
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.005Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/2719-26520c3cd0a79aa1.js",
+      "status": null
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.005Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/8227-2c32651ee7396911.js",
+      "status": null
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.005Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/5693-338e286571132509.js",
+      "status": null
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.005Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/4412-6dd02aea9ebca9b3.js",
+      "status": null
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.005Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/9149-ab5c754f0b310e4a.js",
+      "status": null
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.005Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/main-app-1d5b50c6349e11d1.js",
+      "status": null
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.005Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/4774-8f587820c527868f.js",
+      "status": null
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.005Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/9b29f77b-321cf80380898455.js",
+      "status": null
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.014Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/webpack-a7c528c82b0ead10.js",
+      "status": 200
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.062Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/9149-ab5c754f0b310e4a.js",
+      "status": 200
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.062Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/9523-7323485d6a1327b5.js",
+      "status": 200
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.063Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/2719-26520c3cd0a79aa1.js",
+      "status": 200
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.063Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/app/layout-3ffdee293c6a0cd3.js",
+      "status": 200
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.064Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/app/not-found-dffda8f7cf56ad14.js",
+      "status": 200
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.064Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/9b29f77b-321cf80380898455.js",
+      "status": 200
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.077Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/app/auth/register/page-8405771d6aee5e28.js",
+      "status": 200
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.077Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/4602-5813b250b1de3043.js",
+      "status": 200
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.079Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/8140-a83692458fd6d2a6.js",
+      "status": 200
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.079Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/3742-e61af0a7cfa4ceb2.js",
+      "status": 200
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.080Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/2018-2ed31848330973c5.js",
+      "status": 200
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.082Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/1147-8c9959d4bb63e9cf.js",
+      "status": 200
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.083Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/9840-aca0236622f0dbd9.js",
+      "status": 200
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.084Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/3176-8f8605731c6de6a0.js",
+      "status": 200
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.085Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/2426-6d1d34079c2fa7b1.js",
+      "status": 200
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.085Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/8930-1b7818ea4c8cbb73.js",
+      "status": 200
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.086Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/9528-6b07c085fb0a6180.js",
+      "status": 200
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.090Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/8227-2c32651ee7396911.js",
+      "status": 200
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.091Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/5693-338e286571132509.js",
+      "status": 200
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.091Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/4412-6dd02aea9ebca9b3.js",
+      "status": 200
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.092Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/main-app-1d5b50c6349e11d1.js",
+      "status": 200
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.093Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/_next/static/chunks/4774-8f587820c527868f.js",
+      "status": 200
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.110Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495",
+      "status": 200
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.118Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/cdn-cgi/rum?",
+      "status": null
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.119Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/favicon.ico",
+      "status": null
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.142Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/cdn-cgi/rum?",
+      "status": 204
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.195Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit",
+      "status": null
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.279Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://challenges.cloudflare.com/turnstile/v0/g/330e41bb475c/api.js",
+      "status": null
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.306Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://challenges.cloudflare.com/turnstile/v0/g/330e41bb475c/api.js",
+      "status": 200
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.312Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/av0/rch/5wdw8/0x4AAAAAAAxuMrGCYFcOwd1N/auto/fbE/new/normal?lang=auto",
+      "status": null
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.395Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/av0/rch/5wdw8/0x4AAAAAAAxuMrGCYFcOwd1N/auto/fbE/new/normal?lang=auto",
+      "status": 200
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:43.401Z",
+    "type": "browser.network.traffic",
+    "payload": {
+      "url": "https://dashboard.digitalplat.org/favicon.ico",
+      "status": 404
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:48.001Z",
+    "type": "browser.screenshot.captured",
+    "payload": {
+      "path": "/home/cid/shiki/tests/benchmarks/evidence/screenshots/digitalplat_register_state.png"
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:48.002Z",
+    "type": "browser.security.challenge_detected",
+    "payload": {
+      "hasChallenge": false,
+      "type": "none",
+      "solved": false,
+      "token": null
+    }
+  },
+  {
+    "timestamp": "2026-09-07T16:54:48.002Z",
+    "type": "browser.goal.candidate_selected",
+    "payload": {
+      "selected": null
+    }
+  }
+]

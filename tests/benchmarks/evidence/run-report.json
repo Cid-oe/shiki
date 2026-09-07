@@ -1,0 +1,28 @@
+{
+  "benchmark": "Autonomous Account Registration & Free Domain Discovery",
+  "status": "SUSPENDED_AT_SECURITY_GATE",
+  "liveBrowserTest": true,
+  "candidatesGenerated": 36,
+  "candidatesActuallyCheckedLive": 0,
+  "checkLimitationReason": "DigitalPlat registrar catalog requires authenticated session; registration reached human Turnstile boundary",
+  "selectedDomain": null,
+  "availabilityEvidence": "None - Mocked tests previously reported 'shiki-hub' in unit test mock; live registrar search was not completed.",
+  "securityHandoffEvidence": "Cloudflare Turnstile iframe confirmed present in live DOM via CDP inspection. Token: null (unsolved).",
+  "mockedTests": [
+    "tests/test_gap_capabilities.js (Simulated Turnstile & mock availability check)"
+  ],
+  "realTests": [
+    "tests/benchmarks/run_real_benchmark.js (Live Brave process + real DigitalPlat DOM + real network interception + screenshot)"
+  ],
+  "unverifiedClaimsCorrected": [
+    "Candidate 'shiki-hub' was only selected in a unit-test mock function (tests/test_gap_capabilities.js), NOT against the live DigitalPlat registrar.",
+    "Live registration was blocked at the real Turnstile CAPTCHA boundary and was not submitted."
+  ],
+  "artifacts": {
+    "candidateDomains": "tests/benchmarks/evidence/candidate-domains.json",
+    "selectionTrace": "tests/benchmarks/evidence/selection-trace.json",
+    "browserEvents": "tests/benchmarks/evidence/browser-events.json",
+    "networkEvidence": "tests/benchmarks/evidence/network-evidence.json",
+    "screenshot": "tests/benchmarks/evidence/screenshots/digitalplat_register_state.png"
+  }
+}

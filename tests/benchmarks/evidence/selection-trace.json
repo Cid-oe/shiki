@@ -1,0 +1,263 @@
+{
+  "selected": null,
+  "timestamp": "2026-09-07T16:54:48.002Z",
+  "rankingTrace": {
+    "selectedCandidate": null,
+    "status": "SUSPENDED_AT_HUMAN_SECURITY_BOUNDARY",
+    "reason": "Real Cloudflare Turnstile token not present without human click",
+    "candidatesEvaluated": [
+      {
+        "name": "cid-oe",
+        "domain": "cid-oe.nic.us.kg",
+        "rankScore": 94,
+        "status": "UNVERIFIED_PENDING_AUTH_CLEARANCE",
+        "reason": "Registration blocked at Cloudflare Turnstile boundary"
+      },
+      {
+        "name": "cid-oe-app",
+        "domain": "cid-oe-app.nic.us.kg",
+        "rankScore": 90,
+        "status": "UNVERIFIED_PENDING_AUTH_CLEARANCE",
+        "reason": "Registration blocked at Cloudflare Turnstile boundary"
+      },
+      {
+        "name": "cid-oe-hub",
+        "domain": "cid-oe-hub.nic.us.kg",
+        "rankScore": 90,
+        "status": "UNVERIFIED_PENDING_AUTH_CLEARANCE",
+        "reason": "Registration blocked at Cloudflare Turnstile boundary"
+      },
+      {
+        "name": "cid-oe-lab",
+        "domain": "cid-oe-lab.nic.us.kg",
+        "rankScore": 90,
+        "status": "UNVERIFIED_PENDING_AUTH_CLEARANCE",
+        "reason": "Registration blocked at Cloudflare Turnstile boundary"
+      },
+      {
+        "name": "cid-oe-dev",
+        "domain": "cid-oe-dev.nic.us.kg",
+        "rankScore": 90,
+        "status": "UNVERIFIED_PENDING_AUTH_CLEARANCE",
+        "reason": "Registration blocked at Cloudflare Turnstile boundary"
+      },
+      {
+        "name": "cid-oe-hq",
+        "domain": "cid-oe-hq.nic.us.kg",
+        "rankScore": 91,
+        "status": "UNVERIFIED_PENDING_AUTH_CLEARANCE",
+        "reason": "Registration blocked at Cloudflare Turnstile boundary"
+      },
+      {
+        "name": "get-cid-oe",
+        "domain": "get-cid-oe.nic.us.kg",
+        "rankScore": 90,
+        "status": "UNVERIFIED_PENDING_AUTH_CLEARANCE",
+        "reason": "Registration blocked at Cloudflare Turnstile boundary"
+      },
+      {
+        "name": "the-cid-oe",
+        "domain": "the-cid-oe.nic.us.kg",
+        "rankScore": 90,
+        "status": "UNVERIFIED_PENDING_AUTH_CLEARANCE",
+        "reason": "Registration blocked at Cloudflare Turnstile boundary"
+      },
+      {
+        "name": "ai-cid-oe",
+        "domain": "ai-cid-oe.nic.us.kg",
+        "rankScore": 91,
+        "status": "UNVERIFIED_PENDING_AUTH_CLEARANCE",
+        "reason": "Registration blocked at Cloudflare Turnstile boundary"
+      },
+      {
+        "name": "shiki",
+        "domain": "shiki.nic.us.kg",
+        "rankScore": 95,
+        "status": "UNVERIFIED_PENDING_AUTH_CLEARANCE",
+        "reason": "Registration blocked at Cloudflare Turnstile boundary"
+      },
+      {
+        "name": "shiki-app",
+        "domain": "shiki-app.nic.us.kg",
+        "rankScore": 91,
+        "status": "UNVERIFIED_PENDING_AUTH_CLEARANCE",
+        "reason": "Registration blocked at Cloudflare Turnstile boundary"
+      },
+      {
+        "name": "shiki-hub",
+        "domain": "shiki-hub.nic.us.kg",
+        "rankScore": 91,
+        "status": "UNVERIFIED_PENDING_AUTH_CLEARANCE",
+        "reason": "Registration blocked at Cloudflare Turnstile boundary"
+      },
+      {
+        "name": "shiki-lab",
+        "domain": "shiki-lab.nic.us.kg",
+        "rankScore": 91,
+        "status": "UNVERIFIED_PENDING_AUTH_CLEARANCE",
+        "reason": "Registration blocked at Cloudflare Turnstile boundary"
+      },
+      {
+        "name": "shiki-dev",
+        "domain": "shiki-dev.nic.us.kg",
+        "rankScore": 91,
+        "status": "UNVERIFIED_PENDING_AUTH_CLEARANCE",
+        "reason": "Registration blocked at Cloudflare Turnstile boundary"
+      },
+      {
+        "name": "shiki-hq",
+        "domain": "shiki-hq.nic.us.kg",
+        "rankScore": 92,
+        "status": "UNVERIFIED_PENDING_AUTH_CLEARANCE",
+        "reason": "Registration blocked at Cloudflare Turnstile boundary"
+      },
+      {
+        "name": "get-shiki",
+        "domain": "get-shiki.nic.us.kg",
+        "rankScore": 91,
+        "status": "UNVERIFIED_PENDING_AUTH_CLEARANCE",
+        "reason": "Registration blocked at Cloudflare Turnstile boundary"
+      },
+      {
+        "name": "the-shiki",
+        "domain": "the-shiki.nic.us.kg",
+        "rankScore": 91,
+        "status": "UNVERIFIED_PENDING_AUTH_CLEARANCE",
+        "reason": "Registration blocked at Cloudflare Turnstile boundary"
+      },
+      {
+        "name": "ai-shiki",
+        "domain": "ai-shiki.nic.us.kg",
+        "rankScore": 92,
+        "status": "UNVERIFIED_PENDING_AUTH_CLEARANCE",
+        "reason": "Registration blocked at Cloudflare Turnstile boundary"
+      },
+      {
+        "name": "siddharth",
+        "domain": "siddharth.nic.us.kg",
+        "rankScore": 91,
+        "status": "UNVERIFIED_PENDING_AUTH_CLEARANCE",
+        "reason": "Registration blocked at Cloudflare Turnstile boundary"
+      },
+      {
+        "name": "siddharth-app",
+        "domain": "siddharth-app.nic.us.kg",
+        "rankScore": 87,
+        "status": "UNVERIFIED_PENDING_AUTH_CLEARANCE",
+        "reason": "Registration blocked at Cloudflare Turnstile boundary"
+      },
+      {
+        "name": "siddharth-hub",
+        "domain": "siddharth-hub.nic.us.kg",
+        "rankScore": 87,
+        "status": "UNVERIFIED_PENDING_AUTH_CLEARANCE",
+        "reason": "Registration blocked at Cloudflare Turnstile boundary"
+      },
+      {
+        "name": "siddharth-lab",
+        "domain": "siddharth-lab.nic.us.kg",
+        "rankScore": 87,
+        "status": "UNVERIFIED_PENDING_AUTH_CLEARANCE",
+        "reason": "Registration blocked at Cloudflare Turnstile boundary"
+      },
+      {
+        "name": "siddharth-dev",
+        "domain": "siddharth-dev.nic.us.kg",
+        "rankScore": 87,
+        "status": "UNVERIFIED_PENDING_AUTH_CLEARANCE",
+        "reason": "Registration blocked at Cloudflare Turnstile boundary"
+      },
+      {
+        "name": "siddharth-hq",
+        "domain": "siddharth-hq.nic.us.kg",
+        "rankScore": 88,
+        "status": "UNVERIFIED_PENDING_AUTH_CLEARANCE",
+        "reason": "Registration blocked at Cloudflare Turnstile boundary"
+      },
+      {
+        "name": "get-siddharth",
+        "domain": "get-siddharth.nic.us.kg",
+        "rankScore": 87,
+        "status": "UNVERIFIED_PENDING_AUTH_CLEARANCE",
+        "reason": "Registration blocked at Cloudflare Turnstile boundary"
+      },
+      {
+        "name": "the-siddharth",
+        "domain": "the-siddharth.nic.us.kg",
+        "rankScore": 87,
+        "status": "UNVERIFIED_PENDING_AUTH_CLEARANCE",
+        "reason": "Registration blocked at Cloudflare Turnstile boundary"
+      },
+      {
+        "name": "ai-siddharth",
+        "domain": "ai-siddharth.nic.us.kg",
+        "rankScore": 88,
+        "status": "UNVERIFIED_PENDING_AUTH_CLEARANCE",
+        "reason": "Registration blocked at Cloudflare Turnstile boundary"
+      },
+      {
+        "name": "siddharth-u",
+        "domain": "siddharth-u.nic.us.kg",
+        "rankScore": 89,
+        "status": "UNVERIFIED_PENDING_AUTH_CLEARANCE",
+        "reason": "Registration blocked at Cloudflare Turnstile boundary"
+      },
+      {
+        "name": "siddharth-u-app",
+        "domain": "siddharth-u-app.nic.us.kg",
+        "rankScore": 85,
+        "status": "UNVERIFIED_PENDING_AUTH_CLEARANCE",
+        "reason": "Registration blocked at Cloudflare Turnstile boundary"
+      },
+      {
+        "name": "siddharth-u-hub",
+        "domain": "siddharth-u-hub.nic.us.kg",
+        "rankScore": 85,
+        "status": "UNVERIFIED_PENDING_AUTH_CLEARANCE",
+        "reason": "Registration blocked at Cloudflare Turnstile boundary"
+      },
+      {
+        "name": "siddharth-u-lab",
+        "domain": "siddharth-u-lab.nic.us.kg",
+        "rankScore": 85,
+        "status": "UNVERIFIED_PENDING_AUTH_CLEARANCE",
+        "reason": "Registration blocked at Cloudflare Turnstile boundary"
+      },
+      {
+        "name": "siddharth-u-dev",
+        "domain": "siddharth-u-dev.nic.us.kg",
+        "rankScore": 85,
+        "status": "UNVERIFIED_PENDING_AUTH_CLEARANCE",
+        "reason": "Registration blocked at Cloudflare Turnstile boundary"
+      },
+      {
+        "name": "siddharth-u-hq",
+        "domain": "siddharth-u-hq.nic.us.kg",
+        "rankScore": 86,
+        "status": "UNVERIFIED_PENDING_AUTH_CLEARANCE",
+        "reason": "Registration blocked at Cloudflare Turnstile boundary"
+      },
+      {
+        "name": "get-siddharth-u",
+        "domain": "get-siddharth-u.nic.us.kg",
+        "rankScore": 85,
+        "status": "UNVERIFIED_PENDING_AUTH_CLEARANCE",
+        "reason": "Registration blocked at Cloudflare Turnstile boundary"
+      },
+      {
+        "name": "the-siddharth-u",
+        "domain": "the-siddharth-u.nic.us.kg",
+        "rankScore": 85,
+        "status": "UNVERIFIED_PENDING_AUTH_CLEARANCE",
+        "reason": "Registration blocked at Cloudflare Turnstile boundary"
+      },
+      {
+        "name": "ai-siddharth-u",
+        "domain": "ai-siddharth-u.nic.us.kg",
+        "rankScore": 86,
+        "status": "UNVERIFIED_PENDING_AUTH_CLEARANCE",
+        "reason": "Registration blocked at Cloudflare Turnstile boundary"
+      }
+    ]
+  }
+}
