@@ -22,7 +22,7 @@
        └───────────────────────┬───────────────────────┘
                                │
                                ▼
-            Master MCP Server (16 Tools via stdio/SSE)
+            Master MCP Server (16 Tools via stdio)
 ```
 
 ---

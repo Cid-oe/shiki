@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 /**
  * Universal Digital Execution Platform: Master MCP Server
- * Exposes all registered capabilities (Desktop, Browser, Containers, Research & Intelligence)
- * to any client AI agent via standard JSON-RPC 2.0.
+ * Hardened JSON-RPC 2.0 stdio server with strict request scoping,
+ * error boundary isolation, and explicit trust-level enforcement.
  */
 
 const readline = require('readline');
@@ -25,11 +25,26 @@ const rl = readline.createInterface({
 });
 
 rl.on('line', async (line) => {
-  if (!line.trim()) return;
-  try {
-    const request = JSON.parse(line);
+  const trimmed = line.trim();
+  if (!trimmed) return;
 
-    // List all dynamic capabilities as standard MCP tools
+  let request = null;
+
+  try {
+    request = JSON.parse(trimmed);
+  } catch (parseErr) {
+    console.log(JSON.stringify({
+      jsonrpc: "2.0",
+      id: null,
+      error: { code: -32700, message: `Parse error: Invalid JSON: ${parseErr.message}` }
+    }));
+    return;
+  }
+
+  const reqId = request && request.id !== undefined ? request.id : null;
+
+  try {
+    // 1. Tool Listing
     if (request.method === "tools/list") {
       const tools = registry.listCapabilities().map(cap => ({
         name: cap.name,
@@ -39,20 +54,30 @@ rl.on('line', async (line) => {
 
       console.log(JSON.stringify({
         jsonrpc: "2.0",
-        id: request.id,
+        id: reqId,
         result: { tools }
       }));
       return;
     }
 
-    // Dispatch execution through the permission-enforced Capability Registry
+    // 2. Tool Execution
     if (request.method === "tools/call") {
-      const { name, arguments: args } = request.params;
-      const result = await registry.execute(name, args || {});
+      const { name, arguments: args } = request.params || {};
+      if (!name) {
+        throw new Error("Missing 'name' in tools/call parameters");
+      }
+
+      // Enforce operator trust level via params or default to Zone 1 (Safe Interact)
+      // High-risk operations (Zone 2+ write/exec/delete) must explicitly supply verified operator context
+      const operatorTrustLevel = request.params?.context?.operatorTrustLevel !== undefined 
+        ? request.params.context.operatorTrustLevel 
+        : 1; // Default to Zone 1: prevents unauthorized container_exec / disk destruction
+
+      const result = await registry.execute(name, args || {}, { operatorTrustLevel });
 
       console.log(JSON.stringify({
         jsonrpc: "2.0",
-        id: request.id,
+        id: reqId,
         result: {
           content: [{ type: "text", text: JSON.stringify(result, null, 2) }]
         }
@@ -60,15 +85,17 @@ rl.on('line', async (line) => {
       return;
     }
 
+    // Default response for unhandled protocol methods (ping, initialize, etc.)
     console.log(JSON.stringify({
       jsonrpc: "2.0",
-      id: request.id,
+      id: reqId,
       result: {}
     }));
+
   } catch (err) {
     console.log(JSON.stringify({
       jsonrpc: "2.0",
-      id: request?.id || null,
+      id: reqId,
       error: { code: -32000, message: err.message }
     }));
   }
