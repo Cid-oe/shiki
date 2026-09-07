@@ -14,6 +14,8 @@ const { registerDockerCapabilities } = require('../capabilities/container-docker
 const { registerBrowserCapabilities } = require('../capabilities/browser-ambient');
 const { registerResearchCapabilities } = require('../capabilities/research-intelligence');
 const { registerShellCapabilities } = require('../capabilities/os-shell');
+const { registerInputCapabilities } = require('../capabilities/os-input');
+const { registerAccessibilityCapabilities } = require('../capabilities/os-a11y');
 
 const registry = new CapabilityRegistry();
 registerDesktopCapabilities(registry);
@@ -21,6 +23,8 @@ registerDockerCapabilities(registry);
 registerBrowserCapabilities(registry);
 registerResearchCapabilities(registry);
 registerShellCapabilities(registry);
+registerInputCapabilities(registry);
+registerAccessibilityCapabilities(registry);
 
 // Trust level human-readable names
 const TRUST_NAMES = {
