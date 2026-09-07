@@ -7,7 +7,7 @@
     "node": ">=22.0.0"
   },
   "scripts": {
-    "test": "node tests/verify_universal_platform.js && node tests/test_research_intelligence.js && node tests/test_hardened_security.js && node tests/test_gap_capabilities.js && node tests/test_os_shell.js && node tests/test_os_input.js && node tests/test_os_a11y.js",
+    "test": "node tests/verify_universal_platform.js && node tests/test_research_intelligence.js && node tests/test_hardened_security.js && node tests/test_gap_capabilities.js && node tests/test_os_shell.js && node tests/test_os_input.js && node tests/test_os_a11y.js && node tests/test_browser_platform.js",
     "start": "node mcp-server/index.js"
   },
   "keywords": [
