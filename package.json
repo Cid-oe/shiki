@@ -1,0 +1,13 @@
+{
+  "name": "shiki-ai",
+  "version": "1.0.0",
+  "description": "Universal AI Digital Execution & Learning Platform",
+  "main": "mcp-server/index.js",
+  "scripts": {
+    "test": "node tests/verify_universal_platform.js && node tests/test_research_intelligence.js",
+    "start": "node mcp-server/index.js"
+  },
+  "keywords": ["ai", "agent", "browser-automation", "desktop-automation", "mcp", "knowledge-graph"],
+  "author": "Cid-oe",
+  "license": "MIT"
+}

@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Browser Controller Native Bridge",
+  "version": "1.0.0",
+  "description": "Exposes ambient browser capabilities to the Agent Runtime via Native Messaging.",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "scripting",
+    "debugger",
+    "storage",
+    "cookies",
+    "nativeMessaging"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  }
+}
