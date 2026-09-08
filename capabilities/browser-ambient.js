@@ -156,23 +156,24 @@ function registerBrowserCapabilities(registry, port = 9222) {
     }
   });
 
-  // 5. Semantic & Trusted DOM Actions
+  // 5. Trusted Fidelity DOM Actions
   registry.register({
     name: "browser_fill_semantic",
     version: "1.0.0",
     category: "browser",
     trustLevel: 1,
-    description: "Dispatches input into web fields matching accessibility names or placeholders.",
+    description: "Dispatches trusted input into web fields matching accessibility names or placeholders (focus click + per-char keyDown/keyUp).",
     schema: {
       type: "object",
       required: ["query", "value"],
       properties: {
         query: { type: "object" },
-        value: { type: "string" }
+        value: { type: "string" },
+        useTrusted: { type: "boolean", default: true }
       }
     },
-    handler: async ({ query, value }) => {
-      return await browser.fillSemantic(query, value);
+    handler: async ({ query, value, useTrusted = true }) => {
+      return await browser.fillSemantic(query, value, useTrusted);
     }
   });
 
@@ -181,17 +182,53 @@ function registerBrowserCapabilities(registry, port = 9222) {
     version: "1.0.0",
     category: "browser",
     trustLevel: 1,
-    description: "Clicks elements with optional CDP trusted mouse events (mouseMoved, mousePressed, mouseReleased).",
+    description: "Clicks elements with trusted CDP mouse events (mouseMoved, mousePressed, mouseReleased) by default.",
     schema: {
       type: "object",
       required: ["query"],
       properties: {
         query: { type: "object" },
-        useTrusted: { type: "boolean", default: false }
+        useTrusted: { type: "boolean", default: true }
       }
     },
-    handler: async ({ query, useTrusted = false }) => {
+    handler: async ({ query, useTrusted = true }) => {
       return await browser.clickSemantic(query, useTrusted);
+    }
+  });
+
+  registry.register({
+    name: "browser_hover",
+    version: "1.0.0",
+    category: "browser",
+    trustLevel: 1,
+    description: "Hovers over an interactive element via CDP Input.dispatchMouseEvent mouseMoved.",
+    schema: {
+      type: "object",
+      required: ["query"],
+      properties: { query: { type: "object" } }
+    },
+    handler: async ({ query }) => {
+      return await browser.hover(query);
+    }
+  });
+
+  registry.register({
+    name: "browser_drag_and_drop",
+    version: "1.0.0",
+    category: "browser",
+    trustLevel: 1,
+    description: "Performs trusted mouse drag and drop between two elements.",
+    schema: {
+      type: "object",
+      required: ["fromQuery", "toQuery"],
+      properties: {
+        fromQuery: { type: "object" },
+        toQuery: { type: "object" },
+        steps: { type: "number", default: 10 }
+      }
+    },
+    handler: async ({ fromQuery, toQuery, steps = 10 }) => {
+      return await browser.dragAndDrop(fromQuery, toQuery, steps);
     }
   });
 
