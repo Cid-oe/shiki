@@ -16,6 +16,7 @@ const { registerResearchCapabilities } = require('../capabilities/research-intel
 const { registerShellCapabilities } = require('../capabilities/os-shell');
 const { registerInputCapabilities } = require('../capabilities/os-input');
 const { registerAccessibilityCapabilities } = require('../capabilities/os-a11y');
+const { registerHumanLayerCapabilities } = require('../capabilities/humanlayer-bridge');
 
 const registry = new CapabilityRegistry();
 registerDesktopCapabilities(registry);
@@ -25,6 +26,7 @@ registerResearchCapabilities(registry);
 registerShellCapabilities(registry);
 registerInputCapabilities(registry);
 registerAccessibilityCapabilities(registry);
+registerHumanLayerCapabilities(registry);
 
 // Trust level human-readable names
 const TRUST_NAMES = {
